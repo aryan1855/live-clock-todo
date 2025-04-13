@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background: linear-gradient(-45deg, #fceabb, #f8b500, #fceabb, #f76b1c);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    transition: background 1s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  #header {
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .container, .todo-container {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    min-width: 300px;
+    max-width: 400px;
+    color: #222;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .time {
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 4px;
+  }
+  
+  .ampm {
+    font-size: 28px;
+    vertical-align: super;
+    margin-left: 10px;
+  }
+  
+  .date {
+    font-size: 24px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+  }
+  
+  .todo-container h2 {
+    margin-bottom: 10px;
+    color: #222;
+  }
+  
+  #todo-input {
+    width: 70%;
+    padding: 8px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .todo-container button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #f8b500;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .todo-container ul {
+    list-style: none;
+    margin-top: 15px;
+  }
+  
+  .todo-container li {
+    margin: 8px 0;
+    background: rgba(255,255,255,0.8);
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .todo-container li button {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 2px 6px;
+  }
+  
